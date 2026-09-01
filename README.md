@@ -33,20 +33,27 @@ I'm a systems builder and creative technologist. I build bespoke software that s
 * **cui-ico-gen** *(coming soon)* — High-precision Windows 11 icon generator node with glass and gloss overlays.
 
 #### 🎛️ Interactive Audio & Web Synthesizers
-* **[ShallotWHAM](https://github.com/strothman/ShallotWHAM)** — Cyber-styled dual-engine web synthesizer and performance station.
 * **[ShallotBeats](https://github.com/strothman/ShallotBeats)** — 18-kit acoustic drum step sequencer for guitar backing tracks via Web Audio API.
+* **[ShallotWHAM](https://github.com/strothman/ShallotWHAM)** — Cyber-styled dual-engine web synthesizer and performance station.
 * **audio-harmonica** *(coming soon)* — Virtual instrument polyphony and harmonica synthesis engine.
 
 #### 🧅 The Shallot Suite (Local-First Applications)
-* **[Shallot-Money](https://github.com/strothman/Shallot-Money)** — Sleek mobile-first budgeting and expense tracker styled with the signature Shallot Plum theme.
-* **[Shallot-Kitchen-Keeper](https://github.com/strothman/shallot-kitchen-keeper)** — Smart grocery inventory companion to eliminate food waste.
-* **[ShallotPeel](https://github.com/strothman/ShallotPeel)** — Telemetry and token usage analytics for AI coding interactions.
+* **[Shallot-Kitchen-Keeper](https://github.com/strothman/Shallot-Kitchen-Keeper)** — Smart grocery inventory companion to eliminate food waste.
 * **[Shallot-Media-Archive](https://github.com/strothman/Shallot-Media-Archive)** — Local media indexing, tagging, and asset management.
+* **[Shallot-Money](https://github.com/strothman/Shallot-Money)** — Sleek mobile-first budgeting and expense tracker styled with the signature Shallot Plum theme.
+* **[ShallotPeel](https://github.com/strothman/ShallotPeel)** — Telemetry and token usage analytics for AI coding interactions.
 
 #### ⚡ Automation & Utilities
-* **yt-short-bot-garden** *(coming soon)* — Automated end-to-end YouTube Shorts video creation pipeline.
-* **util-exiftool-helper** *(coming soon)* — Batch media metadata processing utility.
+* **[The-Committee](https://github.com/strothman/The-Committee)** — Interactive module-chaining creative engine.
 * **DRAIN** *(coming soon)* — Optimization dashboard for subscription AI workflows.
+* **util-exiftool-helper** *(coming soon)* — Batch media metadata processing utility.
+* **util-joan-datacombinedrive** *(coming soon)* — Zero-download indexer for cloud and local filesystems.
+* **util-movie2vod-CO** *(coming soon)* — Media ingestion and video-on-demand processing pipeline.
+* **utilapp-Misery Detector** *(coming soon)* — Sentiment and mood tracking utility.
+* **utilapp-PLEX Match Maker** *(coming soon)* — Plex media library metadata matching assistant.
+* **utilapp-TokenPal** *(coming soon)* — Discord alert bot monitoring game economy market rates.
+* **utilapp-habits** *(coming soon)* — Local-first personal habit and routine tracker.
+* **yt-short-bot-garden** *(coming soon)* — Automated end-to-end YouTube Shorts video creation pipeline.
 
 ---
 
