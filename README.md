@@ -23,6 +23,9 @@ I'm a systems builder and creative technologist. I build bespoke software that s
 
 ### 🛠️ Featured Ecosystems & Projects
 
+> [!NOTE]
+> **Work in Progress**: I am currently in the process of cleaning up and gradually publishing my project repositories. All projects are linked and will go live as they are uploaded.
+
 #### 🤖 Generative AI & ComfyUI Architecture
 * **[cui-audio-vibe-node](https://github.com/strothman/cui-audio-vibe-node)** — Custom ComfyUI node analyzing song themes and mood via Gemini to guide visual generation.
 * **[Shallot-Suite](https://github.com/strothman/Shallot-Suite)** — Visual LoRA analyzer, epoch testing battery, and Windows 11 ICO generator.
