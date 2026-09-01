@@ -34,6 +34,7 @@ CATEGORY_MAP = {
     
     # 3. The Shallot Suite (Local-First)
     "Shallot-Money": ("The Shallot Suite (Local-First Applications)", "Sleek mobile-first budgeting and expense tracker styled with the signature Shallot Plum theme."),
+    "shallot-money": ("The Shallot Suite (Local-First Applications)", "Sleek mobile-first budgeting and expense tracker styled with the signature Shallot Plum theme."),
     "Shallot-Kitchen-Keeper": ("The Shallot Suite (Local-First Applications)", "Smart grocery inventory companion to eliminate food waste."),
     "shallot-kitchen-keeper": ("The Shallot Suite (Local-First Applications)", "Smart grocery inventory companion to eliminate food waste."),
     "ShallotPeel": ("The Shallot Suite (Local-First Applications)", "Telemetry and token usage analytics for AI coding interactions."),
@@ -75,14 +76,30 @@ CAT_NORMALIZED = {
     "Game Development & Companion Tools": "🎮 Game Development & Companion Tools",
 }
 
-def get_live_github_repos():
+def get_live_github_repos(active_projects=None):
     live = set()
     print("Checking live repositories on GitHub...")
-    for repo_name in CATEGORY_MAP.keys():
-        url = f"https://github.com/{GITHUB_USER}/{repo_name}.git"
+    candidates = set(CATEGORY_MAP.keys())
+    if active_projects:
+        candidates.update(active_projects.keys())
+    
+    for repo_name in candidates:
+        # Check remote url from local project if available
+        remote_url = None
+        if active_projects and repo_name in active_projects:
+            project_path = active_projects[repo_name].get("path")
+            if project_path and os.path.exists(os.path.join(project_path, ".git")):
+                try:
+                    res = subprocess.run(["git", "-C", project_path, "remote", "get-url", "origin"], capture_output=True, text=True, timeout=3)
+                    if res.returncode == 0 and res.stdout.strip():
+                        remote_url = res.stdout.strip()
+                except Exception:
+                    pass
+
+        url = remote_url or f"https://github.com/{GITHUB_USER}/{repo_name}.git"
         try:
             res = subprocess.run(["git", "ls-remote", url], capture_output=True, text=True, timeout=5)
-            if res.returncode == 0:
+            if res.returncode == 0 and res.stdout.strip():
                 live.add(repo_name)
         except Exception:
             pass
@@ -110,15 +127,26 @@ def get_existing_local_projects():
 def read_previous_project_state():
     state_file = os.path.join(PROFILE_REPO_DIR, "PROJECT_STATE.md")
     tracked = set()
+    published = set()
     if os.path.exists(state_file):
         with open(state_file, "r", encoding="utf-8") as f:
+            in_matrix = False
             for line in f:
-                match = re.search(r"\|\s*(?:\*\*\[?([a-zA-Z0-9_\-\s]+)\]?.*?|\`([a-zA-Z0-9_\-\s]+)\`)\s*\|", line)
+                if "## 🗂️ Active Projects Matrix" in line:
+                    in_matrix = True
+                    continue
+                if not in_matrix:
+                    continue
+                # Match rows with directory backticks: | ... | `dir-name` | ... |
+                match = re.search(r"^\|\s*.*?\s*\|\s*`([^`]+)`\s*\|\s*([^|]+)\s*\|", line)
                 if match:
-                    name = (match.group(1) or match.group(2)).strip()
-                    if name and name != "Project Name":
+                    name = match.group(1).strip()
+                    status_col = match.group(2).strip()
+                    if name and name != "Local Directory":
                         tracked.add(name)
-    return tracked
+                        if "Published" in status_col:
+                            published.add(name)
+    return tracked, published
 
 def generate_project_state(active_projects, live_repos):
     today = datetime.date.today().strftime("%Y-%m-%d")
@@ -250,12 +278,13 @@ def main():
     push_flag = "--push" in sys.argv
     print(f"--- Shallot Profile Sync Engine ---")
     active_projects = get_existing_local_projects()
-    previous_tracked = read_previous_project_state()
-    live_repos = get_live_github_repos()
+    previous_tracked, previous_published = read_previous_project_state()
+    live_repos = get_live_github_repos(active_projects)
     
     current_names = set(active_projects.keys())
     removed_projects = previous_tracked - current_names if previous_tracked else set()
     added_projects = current_names - previous_tracked if previous_tracked else set()
+    newly_published = (set(live_repos) & current_names) - previous_published if previous_published else set()
     
     print(f"Active Projects Found : {len(active_projects)}")
     print(f"Published on GitHub   : {len([p for p in active_projects if p in live_repos])}")
@@ -263,6 +292,8 @@ def main():
         print(f"Deleted / Removed     : {removed_projects}")
     if added_projects:
         print(f"Newly Added           : {added_projects}")
+    if newly_published:
+        print(f"Newly Published       : {newly_published}")
         
     # Write PROJECT_STATE.md
     state_content = generate_project_state(active_projects, live_repos)
@@ -277,7 +308,7 @@ def main():
     print("Updated README.md")
 
     # Update CHANGELOG.md
-    update_changelog(added_projects, removed_projects, set())
+    update_changelog(added_projects, removed_projects, newly_published)
     
     if push_flag:
         print("Committing and pushing changes to GitHub...")
