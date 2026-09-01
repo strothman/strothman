@@ -9,6 +9,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Auto-Sync Update (2026-09-01)
+#### Published to GitHub
+- Updated `audio-harmonica` to live clickable GitHub repository link.
+- Updated `cui-audio-vibe-node` to live clickable GitHub repository link.
+- Updated `cui-ico-gen` to live clickable GitHub repository link.
+
+### Auto-Sync Update (2026-09-01)
 #### Added (New Workspace Projects)
 - Added tracking for new project `util-movie2vod-CO`.
 - Added tracking for new project `utilapp-Misery Detector`.

@@ -29,13 +29,13 @@ I'm a systems builder and creative technologist. I build bespoke software that s
 #### 🤖 Generative AI & ComfyUI Architecture
 * **[Shallot-Suite](https://github.com/strothman/Shallot-Suite)** — Visual LoRA analyzer, epoch testing battery, and Windows 11 ICO generator.
 * **[Shallot-cui-bot](https://github.com/strothman/Shallot-cui-bot)** — Discord bot bridge for autonomous ComfyUI image generation.
-* **cui-audio-vibe-node** *(coming soon)* — Custom ComfyUI node analyzing song themes and mood via Gemini to guide visual generation.
-* **cui-ico-gen** *(coming soon)* — High-precision Windows 11 icon generator node with glass and gloss overlays.
+* **[cui-audio-vibe-node](https://github.com/strothman/cui-audio-vibe-node)** — Custom ComfyUI node analyzing song themes and mood via Gemini to guide visual generation.
+* **[cui-ico-gen](https://github.com/strothman/cui-ico-gen)** — High-precision Windows 11 icon generator node with glass and gloss overlays.
 
 #### 🎛️ Interactive Audio & Web Synthesizers
 * **[ShallotBeats](https://github.com/strothman/ShallotBeats)** — 18-kit acoustic drum step sequencer for guitar backing tracks via Web Audio API.
 * **[ShallotWHAM](https://github.com/strothman/ShallotWHAM)** — Cyber-styled dual-engine web synthesizer and performance station.
-* **audio-harmonica** *(coming soon)* — Virtual instrument polyphony and harmonica synthesis engine.
+* **[audio-harmonica](https://github.com/strothman/audio-harmonica)** — Virtual instrument polyphony and harmonica synthesis engine.
 
 #### 🧅 The Shallot Suite (Local-First Applications)
 * **[Shallot-Kitchen-Keeper](https://github.com/strothman/Shallot-Kitchen-Keeper)** — Smart grocery inventory companion to eliminate food waste.

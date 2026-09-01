@@ -10,7 +10,7 @@
 
 | Total Projects Tracked | Published on GitHub | Local / Staged |
 | :---: | :---: | :---: |
-| **26** | **9** | **17** |
+| **26** | **12** | **14** |
 
 ---
 
@@ -21,15 +21,15 @@
 | :--- | :--- | :--- | :--- |
 | **[Shallot-Suite](https://github.com/strothman/Shallot-Suite)** | `Shallot-Suite` | 🟢 **Published** | Visual LoRA analyzer, epoch testing battery, and Windows 11 ICO generator. |
 | **[Shallot-cui-bot](https://github.com/strothman/Shallot-cui-bot)** | `Shallot-cui-bot` | 🟢 **Published** | Discord bot bridge for autonomous ComfyUI image generation. |
-| **cui-audio-vibe-node** | `cui-audio-vibe-node` | 🟡 *Local Only (Coming Soon)* | Custom ComfyUI node analyzing song themes and mood via Gemini to guide visual generation. |
-| **cui-ico-gen** | `cui-ico-gen` | 🟡 *Local Only (Coming Soon)* | High-precision Windows 11 icon generator node with glass and gloss overlays. |
+| **[cui-audio-vibe-node](https://github.com/strothman/cui-audio-vibe-node)** | `cui-audio-vibe-node` | 🟢 **Published** | Custom ComfyUI node analyzing song themes and mood via Gemini to guide visual generation. |
+| **[cui-ico-gen](https://github.com/strothman/cui-ico-gen)** | `cui-ico-gen` | 🟢 **Published** | High-precision Windows 11 icon generator node with glass and gloss overlays. |
 
 ### 2. 🎛️ Interactive Audio & Web Synthesizers
 | Project Name | Local Directory | GitHub Remote Status | Description |
 | :--- | :--- | :--- | :--- |
 | **[ShallotBeats](https://github.com/strothman/ShallotBeats)** | `ShallotBeats` | 🟢 **Published** | 18-kit acoustic drum step sequencer for guitar backing tracks via Web Audio API. |
 | **[ShallotWHAM](https://github.com/strothman/ShallotWHAM)** | `ShallotWHAM` | 🟢 **Published** | Cyber-styled dual-engine web synthesizer and performance station. |
-| **audio-harmonica** | `audio-harmonica` | 🟡 *Local Only (Coming Soon)* | Virtual instrument polyphony and harmonica synthesis engine. |
+| **[audio-harmonica](https://github.com/strothman/audio-harmonica)** | `audio-harmonica` | 🟢 **Published** | Virtual instrument polyphony and harmonica synthesis engine. |
 
 ### 3. 🧅 The Shallot Suite (Local-First Applications)
 | Project Name | Local Directory | GitHub Remote Status | Description |
