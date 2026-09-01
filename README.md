@@ -24,18 +24,18 @@ I'm a systems builder and creative technologist. I build bespoke software that s
 ### 🛠️ Featured Ecosystems & Projects
 
 > [!NOTE]
-> **Work in Progress**: I am currently in the process of cleaning up and gradually publishing my project repositories. All projects are linked and will go live as they are uploaded.
+> **Work in Progress**: I am currently in the process of cleaning up and gradually publishing my project repositories. Unlinked projects will go live soon!
 
 #### 🤖 Generative AI & ComfyUI Architecture
-* **[cui-audio-vibe-node](https://github.com/strothman/cui-audio-vibe-node)** — Custom ComfyUI node analyzing song themes and mood via Gemini to guide visual generation.
 * **[Shallot-Suite](https://github.com/strothman/Shallot-Suite)** — Visual LoRA analyzer, epoch testing battery, and Windows 11 ICO generator.
-* **[cui-ico-gen](https://github.com/strothman/cui-ico-gen)** — High-precision Windows 11 icon generator node with glass and gloss overlays.
 * **[Shallot-cui-bot](https://github.com/strothman/Shallot-cui-bot)** — Discord bot bridge for autonomous ComfyUI image generation.
+* **cui-audio-vibe-node** *(coming soon)* — Custom ComfyUI node analyzing song themes and mood via Gemini to guide visual generation.
+* **cui-ico-gen** *(coming soon)* — High-precision Windows 11 icon generator node with glass and gloss overlays.
 
 #### 🎛️ Interactive Audio & Web Synthesizers
 * **[ShallotWHAM](https://github.com/strothman/ShallotWHAM)** — Cyber-styled dual-engine web synthesizer and performance station.
 * **[ShallotBeats](https://github.com/strothman/ShallotBeats)** — 18-kit acoustic drum step sequencer for guitar backing tracks via Web Audio API.
-* **[audio-harmonica](https://github.com/strothman/audio-harmonica)** — Virtual instrument polyphony and harmonica synthesis engine.
+* **audio-harmonica** *(coming soon)* — Virtual instrument polyphony and harmonica synthesis engine.
 
 #### 🧅 The Shallot Suite (Local-First Applications)
 * **[Shallot-Money](https://github.com/strothman/Shallot-Money)** — Sleek mobile-first budgeting and expense tracker styled with the signature Shallot Plum theme.
@@ -44,9 +44,9 @@ I'm a systems builder and creative technologist. I build bespoke software that s
 * **[Shallot-Media-Archive](https://github.com/strothman/Shallot-Media-Archive)** — Local media indexing, tagging, and asset management.
 
 #### ⚡ Automation & Utilities
-* **[yt-short-bot-garden](https://github.com/strothman/yt-short-bot-garden)** — Automated end-to-end YouTube Shorts video creation pipeline.
-* **[util-exiftool-helper](https://github.com/strothman/util-exiftool-helper)** — Batch media metadata processing utility.
-* **[DRAIN](https://github.com/strothman/DRAIN)** — Optimization dashboard for subscription AI workflows.
+* **yt-short-bot-garden** *(coming soon)* — Automated end-to-end YouTube Shorts video creation pipeline.
+* **util-exiftool-helper** *(coming soon)* — Batch media metadata processing utility.
+* **DRAIN** *(coming soon)* — Optimization dashboard for subscription AI workflows.
 
 ---
 
