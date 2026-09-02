@@ -29,8 +29,6 @@ I'm a systems builder and creative technologist. I build bespoke software that s
 #### 🤖 Generative AI & ComfyUI Architecture
 * **[Shallot-Suite](https://github.com/strothman/Shallot-Suite)** — Visual LoRA analyzer, epoch testing battery, and Windows 11 ICO generator.
 * **[Shallot-cui-bot](https://github.com/strothman/Shallot-cui-bot)** — Discord bot bridge for autonomous ComfyUI image generation.
-* **[cui-audio-vibe-node](https://github.com/strothman/cui-audio-vibe-node)** — Custom ComfyUI node analyzing song themes and mood via Gemini to guide visual generation.
-* **[cui-ico-gen](https://github.com/strothman/cui-ico-gen)** — High-precision Windows 11 icon generator node with glass and gloss overlays.
 
 #### 🎛️ Interactive Audio & Web Synthesizers
 * **[ShallotBeats](https://github.com/strothman/ShallotBeats)** — 18-kit acoustic drum step sequencer for guitar backing tracks via Web Audio API.
@@ -45,6 +43,7 @@ I'm a systems builder and creative technologist. I build bespoke software that s
 
 #### ⚡ Automation & Utilities
 * **[The-Committee](https://github.com/strothman/The-Committee)** — Interactive module-chaining creative engine.
+* **Book Finder** *(coming soon)* — Renaissance AR-aligned book discovery engine and Google Drive storage manager.
 * **DRAIN** *(coming soon)* — Optimization dashboard for subscription AI workflows.
 * **util-exiftool-helper** *(coming soon)* — Batch media metadata processing utility.
 * **util-joan-datacombinedrive** *(coming soon)* — Zero-download indexer for cloud and local filesystems.

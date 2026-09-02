@@ -1,6 +1,6 @@
 # 🧅 Shallot Profile — Project State & Ecosystem Matrix
 
-> **Last Updated**: 2026-09-01  
+> **Last Updated**: 2026-09-02  
 > **Workspace Root**: `C:\Users\strot\Antigravity IDE`  
 > **Status Summary**: Actively tracking all local & published repositories in the Shallot ecosystem.
 
@@ -10,7 +10,7 @@
 
 | Total Projects Tracked | Published on GitHub | Local / Staged |
 | :---: | :---: | :---: |
-| **26** | **12** | **14** |
+| **25** | **10** | **15** |
 
 ---
 
@@ -21,8 +21,6 @@
 | :--- | :--- | :--- | :--- |
 | **[Shallot-Suite](https://github.com/strothman/Shallot-Suite)** | `Shallot-Suite` | 🟢 **Published** | Visual LoRA analyzer, epoch testing battery, and Windows 11 ICO generator. |
 | **[Shallot-cui-bot](https://github.com/strothman/Shallot-cui-bot)** | `Shallot-cui-bot` | 🟢 **Published** | Discord bot bridge for autonomous ComfyUI image generation. |
-| **[cui-audio-vibe-node](https://github.com/strothman/cui-audio-vibe-node)** | `cui-audio-vibe-node` | 🟢 **Published** | Custom ComfyUI node analyzing song themes and mood via Gemini to guide visual generation. |
-| **[cui-ico-gen](https://github.com/strothman/cui-ico-gen)** | `cui-ico-gen` | 🟢 **Published** | High-precision Windows 11 icon generator node with glass and gloss overlays. |
 
 ### 2. 🎛️ Interactive Audio & Web Synthesizers
 | Project Name | Local Directory | GitHub Remote Status | Description |
@@ -43,6 +41,7 @@
 | Project Name | Local Directory | GitHub Remote Status | Description |
 | :--- | :--- | :--- | :--- |
 | **[The-Committee](https://github.com/strothman/The-Committee)** | `The-Committee` | 🟢 **Published** | Interactive module-chaining creative engine. |
+| **Book Finder** | `Book Finder` | 🟡 *Local Only (Coming Soon)* | Renaissance AR-aligned book discovery engine and Google Drive storage manager. |
 | **DRAIN** | `DRAIN` | 🟡 *Local Only (Coming Soon)* | Optimization dashboard for subscription AI workflows. |
 | **util-exiftool-helper** | `util-exiftool-helper` | 🟡 *Local Only (Coming Soon)* | Batch media metadata processing utility. |
 | **util-joan-datacombinedrive** | `util-joan-datacombinedrive` | 🟡 *Local Only (Coming Soon)* | Zero-download indexer for cloud and local filesystems. |

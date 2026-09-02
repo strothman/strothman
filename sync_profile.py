@@ -41,6 +41,7 @@ CATEGORY_MAP = {
     "Shallot-Media-Archive": ("The Shallot Suite (Local-First Applications)", "Local media indexing, tagging, and asset management."),
     
     # 4. Automation & Utilities
+    "Book Finder": ("Automation & Utilities", "Renaissance AR-aligned book discovery engine and Google Drive storage manager."),
     "yt-short-bot-garden": ("Automation & Utilities", "Automated end-to-end YouTube Shorts video creation pipeline."),
     "util-exiftool-helper": ("Automation & Utilities", "Batch media metadata processing utility."),
     "DRAIN": ("Automation & Utilities", "Optimization dashboard for subscription AI workflows."),
