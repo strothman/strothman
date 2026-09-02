@@ -24,8 +24,6 @@ CATEGORY_MAP = {
     # 1. AI & ComfyUI
     "Shallot-Suite": ("Generative AI & ComfyUI Architecture", "Visual LoRA analyzer, epoch testing battery, and Windows 11 ICO generator."),
     "Shallot-cui-bot": ("Generative AI & ComfyUI Architecture", "Discord bot bridge for autonomous ComfyUI image generation."),
-    "cui-audio-vibe-node": ("Generative AI & ComfyUI Architecture", "Custom ComfyUI node analyzing song themes and mood via Gemini to guide visual generation."),
-    "cui-ico-gen": ("Generative AI & ComfyUI Architecture", "High-precision Windows 11 icon generator node with glass and gloss overlays."),
     
     # 2. Audio & Web Synthesizers
     "ShallotWHAM": ("Interactive Audio & Web Synthesizers", "Cyber-styled dual-engine web synthesizer and performance station."),
