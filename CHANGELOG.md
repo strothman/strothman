@@ -8,6 +8,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Auto-Sync Update (2026-09-04)
+#### Added (New Workspace Projects)
+- Added tracking for new project `Car Upgrade`.
+- Added tracking for new project `Shallot-DECLUTTER`.
+- Added tracking for new project `ShallotWHAM-mobile`.
+#### Published to GitHub
+- Updated `Shallot-DECLUTTER` to live clickable GitHub repository link.
+
 ### Auto-Sync Update (2026-09-02)
 #### Removed (Deleted from Workspace)
 - Removed project reference `cui-audio-vibe-node` following local deletion.

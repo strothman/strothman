@@ -27,10 +27,13 @@ CATEGORY_MAP = {
     
     # 2. Audio & Web Synthesizers
     "ShallotWHAM": ("Interactive Audio & Web Synthesizers", "Cyber-styled dual-engine web synthesizer and performance station."),
+    "ShallotWHAM-mobile": ("Interactive Audio & Web Synthesizers", "Touch-optimized mobile dual-engine web synthesizer with ribbon controller and expressive performance pads."),
     "ShallotBeats": ("Interactive Audio & Web Synthesizers", "18-kit acoustic drum step sequencer for guitar backing tracks via Web Audio API."),
     "audio-harmonica": ("Interactive Audio & Web Synthesizers", "Virtual instrument polyphony and harmonica synthesis engine."),
     
     # 3. The Shallot Suite (Local-First)
+    "Shallot-DECLUTTER": ("The Shallot Suite (Local-First Applications)", "Local-first AI document organizer & PWA for digitizing and structuring physical paperwork, receipts, and medical records."),
+    "shallot-declutter": ("The Shallot Suite (Local-First Applications)", "Local-first AI document organizer & PWA for digitizing and structuring physical paperwork, receipts, and medical records."),
     "Shallot-Money": ("The Shallot Suite (Local-First Applications)", "Sleek mobile-first budgeting and expense tracker styled with the signature Shallot Plum theme."),
     "shallot-money": ("The Shallot Suite (Local-First Applications)", "Sleek mobile-first budgeting and expense tracker styled with the signature Shallot Plum theme."),
     "Shallot-Kitchen-Keeper": ("The Shallot Suite (Local-First Applications)", "Smart grocery inventory companion to eliminate food waste."),
@@ -40,6 +43,7 @@ CATEGORY_MAP = {
     
     # 4. Automation & Utilities
     "Book Finder": ("Automation & Utilities", "Renaissance AR-aligned book discovery engine and Google Drive storage manager."),
+    "Car Upgrade": ("Automation & Utilities", "Vehicle infotainment firmware stepping-stone update & hardware upgrade reference."),
     "yt-short-bot-garden": ("Automation & Utilities", "Automated end-to-end YouTube Shorts video creation pipeline."),
     "util-exiftool-helper": ("Automation & Utilities", "Batch media metadata processing utility."),
     "DRAIN": ("Automation & Utilities", "Optimization dashboard for subscription AI workflows."),
@@ -131,7 +135,7 @@ def read_previous_project_state():
         with open(state_file, "r", encoding="utf-8") as f:
             in_matrix = False
             for line in f:
-                if "## 🗂️ Active Projects Matrix" in line:
+                if "Active Projects Matrix" in line or "Active Applications Matrix" in line:
                     in_matrix = True
                     continue
                 if not in_matrix:
@@ -154,21 +158,21 @@ def generate_project_state(active_projects, live_repos):
     loc_count = total - pub_count
     
     out = []
-    out.append("# 🧅 Shallot Profile — Project State & Ecosystem Matrix\n")
+    out.append("# 🧅 Shallot Workspace — Systems State & Ecosystem Matrix\n")
     out.append(f"> **Last Updated**: {today}  ")
     out.append(f"> **Workspace Root**: `C:\\Users\\strot\\Antigravity IDE`  ")
-    out.append("> **Status Summary**: Actively tracking all local & published repositories in the Shallot ecosystem.\n")
+    out.append("> **Status Summary**: Functional tracking matrix for all active tools, utilities, and applications in the Shallot ecosystem.\n")
     out.append("---\n")
     out.append("## 📊 Quick Statistics\n")
-    out.append("| Total Projects Tracked | Published on GitHub | Local / Staged |")
+    out.append("| Total Applications Tracked | Published on GitHub | Local / Staged |")
     out.append("| :---: | :---: | :---: |")
     out.append(f"| **{total}** | **{pub_count}** | **{loc_count}** |\n")
     out.append("---\n")
-    out.append("## 🗂️ Active Projects Matrix\n")
+    out.append("## 🗂️ Active Applications Matrix\n")
 
     for idx, cat_header in enumerate(CATEGORY_ORDER, 1):
         out.append(f"### {idx}. {cat_header}")
-        out.append("| Project Name | Local Directory | GitHub Remote Status | Description |")
+        out.append("| Application | Local Directory | GitHub Remote Status | Capability & Function |")
         out.append("| :--- | :--- | :--- | :--- |")
         
         cat_projects = [p for p in active_projects.values() if p["category"] == cat_header]
@@ -180,63 +184,69 @@ def generate_project_state(active_projects, live_repos):
                 status = "🟢 **Published**"
             else:
                 link = f"**{pname}**"
-                status = "🟡 *Local Only (Coming Soon)*"
+                status = "🟡 *Staged (Local)*"
             out.append(f"| {link} | `{pname}` | {status} | {desc} |")
         out.append("")
     
     out.append("---\n")
     out.append("## 🔄 Dynamic Sync Rules")
-    out.append("1. **Deletion Policy**: If a project folder is deleted from `C:\\Users\\strot\\Antigravity IDE`, running `sync_profile.py` automatically removes its entry from `README.md` and `PROJECT_STATE.md`.")
-    out.append("2. **Publish Policy**: When a local repo is pushed to GitHub, running `sync_profile.py` promotes it from *Coming Soon* to a live clickable hyperlink in `README.md`.")
-    out.append("3. **Audit Trail**: Every modification, addition, or removal is automatically recorded in `CHANGELOG.md`.")
+    out.append("1. **Deletion Policy**: If an application directory is removed from `C:\\Users\\strot\\Antigravity IDE`, running `sync_profile.py` automatically prunes its entry from `README.md` and `PROJECT_STATE.md`.")
+    out.append("2. **Publish Policy**: When a local repository is pushed to GitHub, running `sync_profile.py` automatically updates its status to a live clickable repository link in `README.md` and `PROJECT_STATE.md`.")
+    out.append("3. **Audit Trail**: Every modification, addition, or removal is automatically logged in `CHANGELOG.md`.")
     return "\n".join(out) + "\n"
 
 def generate_readme(active_projects, live_repos):
     out = []
-    out.append("# Hi there, I'm Shallot (strothman) 👋\n")
+    out.append("# 🧅 Shallot Workspace — Systems & Applications Directory\n")
     out.append('<p align="center">')
     out.append('  <img src="shallot_icon.png" width="130" height="130" alt="Shallot Logo" />')
     out.append("</p>\n")
     out.append('<p align="center">')
-    out.append("  <em>Creative Technologist • Generative AI & ComfyUI • Audio Systems • Local-First Tooling</em>")
+    out.append("  <em>Vibe-Coded Software • Practical Local-First Tools • Interactive Web Audio • Generative Pipelines</em>")
     out.append("</p>\n")
     out.append('<p align="center">')
-    out.append('  <img src="https://img.shields.io/badge/Focus-Generative%20AI%20%26%20Audio-8A2BE2?style=flat-square" alt="Focus" />')
-    out.append('  <img src="https://img.shields.io/badge/Architecture-Local--First-2ea44f?style=flat-square" alt="Local-First" />')
+    out.append('  <img src="https://img.shields.io/badge/Methodology-Vibe%20Coded%20%26%20AI%20Assisted-8A2BE2?style=flat-square" alt="Methodology" />')
+    out.append('  <img src="https://img.shields.io/badge/Architecture-Local--First-2ea44f?style=flat-square" alt="Architecture" />')
+    out.append('  <img src="https://img.shields.io/badge/Design%20Goal-Results%20%26%20Utility-orange?style=flat-square" alt="Design Goal" />')
     out.append('  <img src="https://img.shields.io/badge/Ecosystem-Shallot%20Suite-purple?style=flat-square" alt="Shallot Suite" />')
     out.append("</p>\n")
     out.append("---\n")
-    out.append("### 🧅 About Me")
-    out.append("I'm a systems builder and creative technologist. I build bespoke software that sits at the intersection of **Generative AI pipelines**, **interactive audio DSP**, **automation bots**, and **self-sovereign local-first applications**.\n")
+    out.append("### ⚡ Ecosystem Overview")
+    out.append("This catalog indexes functional software, experimental prototypes, and workflow utilities built through **vibe coding and human-AI collaboration**. The focus is placed entirely on **tangible results, usability, and rapid problem-solving** rather than authorship. Each project addresses a concrete need—ranging from browser-based Web Audio DSP synthesizers and autonomous ComfyUI image pipelines, to zero-telemetry local-first record organizers and desktop automation utilities.\n")
     out.append("---\n")
     out.append("### 🛠️ Featured Ecosystems & Projects\n")
     out.append("> [!NOTE]")
-    out.append("> **Work in Progress**: I am currently in the process of cleaning up and gradually publishing my project repositories. Unlinked projects will go live soon!\n")
+    out.append("> **Repository Index**: This directory reflects both active public repositories and local modules in development. Items marked *(staged)* are functional local tools undergoing staging for open-source publication.\n")
 
-    for cat_header in CATEGORY_ORDER[:4]: # Featured top 4
-        out.append(f"#### {cat_header}")
+    for cat_header in CATEGORY_ORDER:
         cat_projects = [p for p in active_projects.values() if p["category"] == cat_header]
+        if not cat_projects:
+            continue
+        out.append(f"#### {cat_header}")
         for p in sorted(cat_projects, key=lambda x: (x["name"] not in live_repos, x["name"])):
             pname = p["name"]
             desc = p["description"]
             if pname in live_repos:
                 out.append(f"* **[{pname}](https://github.com/{GITHUB_USER}/{pname})** — {desc}")
             else:
-                out.append(f"* **{pname}** *(coming soon)* — {desc}")
+                out.append(f"* **{pname}** *(staged)* — {desc}")
         out.append("")
 
     out.append("---\n")
-    out.append("### 💻 Tech Stack & Tooling\n")
+    out.append("### 💻 Functional Domains & Tech Stack\n")
     out.append("```")
-    out.append("  Languages    :: Python, JavaScript, TypeScript, Luau, SQL")
-    out.append("  AI / ML      :: ComfyUI, PyTorch, Stable Diffusion, LoRA Analysis, Gemini API")
-    out.append("  Audio / Web  :: Web Audio API, DSP Synthesis, React, Vite, Tailwind")
-    out.append("  Databases    :: SQLite, Local-First Sync, Google Sheets API")
-    out.append("  DevOps / CLI :: Git, PowerShell, Bash, Custom Desktop Launchers")
+    out.append("  Domains        :: Local-first PWAs, Web Audio DSP, Discord bots, AI workflows, Media automation")
+    out.append("  AI / Vision    :: ComfyUI pipelines, LoRA evaluation, Vision & OCR extraction, Gemini API")
+    out.append("  Audio / Web    :: Web Audio API, real-time polyphonic synthesis, React, TypeScript, Tailwind")
+    out.append("  Data / Storage :: Zero-telemetry local storage, IndexedDB, SQLite, Google Sheets API")
+    out.append("  Platforms      :: Cross-platform Web, Desktop (Windows), PWA (iOS/Android), Headless CLI")
     out.append("```\n")
     out.append("---\n")
     out.append('<p align="center">')
-    out.append(f'  <img src="https://github-readme-stats.vercel.app/api?username={GITHUB_USER}&show_icons=true&theme=tokyonight&hide_border=true" alt="Shallot GitHub Stats" />')
+    out.append('  <a href="PROJECT_STATE.md"><strong>View Full Dynamic Project State & Matrix →</strong></a>')
+    out.append("</p>\n")
+    out.append('<p align="center">')
+    out.append(f'  <img src="https://github-readme-stats.vercel.app/api?username={GITHUB_USER}&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub Repository Activity" />')
     out.append("</p>")
     return "\n".join(out) + "\n"
 
