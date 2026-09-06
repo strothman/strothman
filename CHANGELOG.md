@@ -8,6 +8,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Auto-Sync Update (2026-09-06)
+#### Removed (Deleted / Migrated)
+- Removed obsolete project reference `util-joan-datacombinedrive`.
+#### Added (New Workspace Projects)
+- Added tracking for new project `Google-Audit`.
+#### Private Repositories Documented
+- Documented private repository `Google-Audit` with full architecture details and privacy rationale.
+
 ### Auto-Sync Update (2026-09-04)
 #### Added (New Workspace Projects)
 - Added tracking for new project `Car Upgrade`.

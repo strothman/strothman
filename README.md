@@ -25,7 +25,10 @@ This catalog indexes functional software, experimental prototypes, and workflow 
 ### 🛠️ Featured Ecosystems & Projects
 
 > [!NOTE]
-> **Repository Index**: This directory reflects both active public repositories and local modules in development. Items marked *(staged)* are functional local tools undergoing staging for open-source publication.
+> **Repository Index**: This directory reflects public open-source tools, private production systems, and local modules in development.
+> * 🟢 **Public**: Clickable link to public GitHub repository.
+> * 🔒 **Private**: Clickable link to private GitHub repository (authorized access only).
+> * 🟡 **Staged**: Local module undergoing active development.
 
 #### 🤖 Generative AI & ComfyUI Architecture
 * **[Shallot-Suite](https://github.com/strothman/Shallot-Suite)** — Visual LoRA analyzer, epoch testing battery, and Windows 11 ICO generator.
@@ -46,11 +49,11 @@ This catalog indexes functional software, experimental prototypes, and workflow 
 
 #### ⚡ Automation & Utilities
 * **[The-Committee](https://github.com/strothman/The-Committee)** — Interactive module-chaining creative engine.
+* **[Google-Audit](https://github.com/strothman/Google-Audit)** 🔒 *(Private)* — Master Cloud Storage & Photos Migration Suite. Safe zero-download drive indexer, document isolation, duplicate/burst photo cleaner, and Google Photos migration engine with automated recovery manifests.
 * **Book Finder** *(staged)* — Renaissance AR-aligned book discovery engine and Google Drive storage manager.
 * **Car Upgrade** *(staged)* — Vehicle infotainment firmware stepping-stone update & hardware upgrade reference.
 * **DRAIN** *(staged)* — Optimization dashboard for subscription AI workflows.
 * **util-exiftool-helper** *(staged)* — Batch media metadata processing utility.
-* **util-joan-datacombinedrive** *(staged)* — Zero-download indexer for cloud and local filesystems.
 * **util-movie2vod-CO** *(staged)* — Media ingestion and video-on-demand processing pipeline.
 * **utilapp-Misery Detector** *(staged)* — Sentiment and mood tracking utility.
 * **utilapp-PLEX Match Maker** *(staged)* — Plex media library metadata matching assistant.
@@ -64,6 +67,16 @@ This catalog indexes functional software, experimental prototypes, and workflow 
 * **game-ROBLOX Midnight Menu** *(staged)* — Luau UI and custom game scripting module.
 * **game-math-survivors-for-ipad** *(staged)* — Educational survivor-like action game for tablet.
 * **game-palworld-eggscan** *(staged)* — Companion scanner and helper for Palworld.
+
+---
+
+### 🔒 Private Repositories & System Security
+
+Certain specialized tools in the Shallot ecosystem are maintained as **Private** repositories on GitHub. These systems are production-ready and version-controlled, but are restricted from public indexing for specific security and infrastructure reasons:
+
+| Repository | Focus & Architecture | Security & Privacy Rationale |
+| :--- | :--- | :--- |
+| **[Google-Audit](https://github.com/strothman/Google-Audit)** 🔒 | Master Cloud Storage & Photos Migration Suite. Safe zero-download drive indexer, document isolation, duplicate/burst photo cleaner, and Google Photos migration engine with automated recovery manifests. | **Defense-in-Depth & Privacy**: While our `.gitignore` strictly shields and blocks all OAuth tokens and keys, maintaining the repository as private provides a critical second layer of protection against accidental exposure of Google Cloud credentials or Discord bot webhooks. The system references specific household computer names, network paths (`\\joandesk\Cloud\...`), local drive letters (`W:\My Drive`), and personal storage layouts designed for our specific family environment. |
 
 ---
 

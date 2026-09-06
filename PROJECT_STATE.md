@@ -1,6 +1,6 @@
 # 🧅 Shallot Workspace — Systems State & Ecosystem Matrix
 
-> **Last Updated**: 2026-09-04  
+> **Last Updated**: 2026-09-06  
 > **Workspace Root**: `C:\Users\strot\Antigravity IDE`  
 > **Status Summary**: Functional tracking matrix for all active tools, utilities, and applications in the Shallot ecosystem.
 
@@ -8,9 +8,9 @@
 
 ## 📊 Quick Statistics
 
-| Total Applications Tracked | Published on GitHub | Local / Staged |
-| :---: | :---: | :---: |
-| **28** | **11** | **17** |
+| Total Applications Tracked | Published (Public) | Published (Private) | Local / Staged |
+| :---: | :---: | :---: | :---: |
+| **28** | **11** | **1** | **16** |
 
 ---
 
@@ -43,11 +43,11 @@
 | Application | Local Directory | GitHub Remote Status | Capability & Function |
 | :--- | :--- | :--- | :--- |
 | **[The-Committee](https://github.com/strothman/The-Committee)** | `The-Committee` | 🟢 **Published** | Interactive module-chaining creative engine. |
+| **[Google-Audit](https://github.com/strothman/Google-Audit)** 🔒 | `Google-Audit` | 🔒 **Private Repo** | Master Cloud Storage & Photos Migration Suite. Safe zero-download drive indexer, document isolation, duplicate/burst photo cleaner, and Google Photos migration engine with automated recovery manifests. |
 | **Book Finder** | `Book Finder` | 🟡 *Staged (Local)* | Renaissance AR-aligned book discovery engine and Google Drive storage manager. |
 | **Car Upgrade** | `Car Upgrade` | 🟡 *Staged (Local)* | Vehicle infotainment firmware stepping-stone update & hardware upgrade reference. |
 | **DRAIN** | `DRAIN` | 🟡 *Staged (Local)* | Optimization dashboard for subscription AI workflows. |
 | **util-exiftool-helper** | `util-exiftool-helper` | 🟡 *Staged (Local)* | Batch media metadata processing utility. |
-| **util-joan-datacombinedrive** | `util-joan-datacombinedrive` | 🟡 *Staged (Local)* | Zero-download indexer for cloud and local filesystems. |
 | **util-movie2vod-CO** | `util-movie2vod-CO` | 🟡 *Staged (Local)* | Media ingestion and video-on-demand processing pipeline. |
 | **utilapp-Misery Detector** | `utilapp-Misery Detector` | 🟡 *Staged (Local)* | Sentiment and mood tracking utility. |
 | **utilapp-PLEX Match Maker** | `utilapp-PLEX Match Maker` | 🟡 *Staged (Local)* | Plex media library metadata matching assistant. |
@@ -66,7 +66,32 @@
 
 ---
 
+## 🔒 Private Repositories & Internal Utilities
+
+Certain critical systems in the Shallot workspace are published to GitHub under **Private** visibility. These repositories are actively maintained, version-controlled, and deployed in production, but are restricted from public indexing to protect sensitive family infrastructure, credentials, and live data operations.
+
+### 🛡️ Google-Audit (`Google-Audit`)
+* **Remote Status**: 🔒 **Private Repository** ([github.com/strothman/Google-Audit](https://github.com/strothman/Google-Audit))
+* **Category**: ⚡ Automation & Utilities
+* **Operational Role**: Master Cloud Storage & Photos Migration Suite. Safe zero-download drive indexer, document isolation, duplicate/burst photo cleaner, and Google Photos migration engine with automated recovery manifests.
+
+#### ⚙️ Key Capabilities & Architecture
+- **Zero-Download Cloud Audit**: Safely indexes and metadata-scans millions of cloud files without local disk exhaustion.
+- **Document & Project Isolation**: Auto-detects and isolates documents (PDFs, Office files, CAD) away from photos into dedicated archival preservation folders before cleaning.
+- **Burst & MD5 Deduplication**: Removes exact byte-for-byte duplicate photos and redundant high-speed camera bursts while preserving highest quality originals.
+- **Multi-Stream Photos Migration**: High-throughput Google Photos streaming engine with configurable bandwidth throttle and multi-worker pools.
+- **Flight-Recorder Safety Manifests**: 1-click restoration ledger tracking every file movement, allowing instant rollback of trashed files.
+- **Discord Watchdog**: Background service posting live telemetry, progress bars, throughput metrics, and stall alerts.
+
+#### 🔐 Why This Repository Is Kept Private
+1. **Defense-in-Depth for Cloud Credentials**: While our `.gitignore` strictly shields and blocks all OAuth tokens and keys, maintaining the repository as private provides a critical second layer of protection against accidental exposure of Google Cloud credentials or Discord bot webhooks.
+2. **Custom Family Infrastructure**: The system references specific household computer names, network paths (`\\joandesk\Cloud\...`), local drive letters (`W:\My Drive`), and personal storage layouts designed for our specific family environment.
+3. **Live Family Data Operations**: The tool executes live file movement, deduplication, and Google Photos streaming for irreplaceable family memories spanning decades. Keeping the operations code in a private repository prevents unwanted external forks or unauthorized indexing.
+4. **Tailored Household Rules**: It includes custom bandwidth limiters designed around our home Wi-Fi and Plex media streaming needs rather than generic public software defaults.
+
+---
+
 ## 🔄 Dynamic Sync Rules
 1. **Deletion Policy**: If an application directory is removed from `C:\Users\strot\Antigravity IDE`, running `sync_profile.py` automatically prunes its entry from `README.md` and `PROJECT_STATE.md`.
-2. **Publish Policy**: When a local repository is pushed to GitHub, running `sync_profile.py` automatically updates its status to a live clickable repository link in `README.md` and `PROJECT_STATE.md`.
+2. **Publish Policy**: When a local repository is pushed to GitHub, running `sync_profile.py` automatically updates its status to a live repository link (`🟢 Published` for public, `🔒 Private Repo` for private) in `README.md` and `PROJECT_STATE.md`.
 3. **Audit Trail**: Every modification, addition, or removal is automatically logged in `CHANGELOG.md`.
