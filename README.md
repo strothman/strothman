@@ -37,8 +37,6 @@ This catalog indexes functional software, experimental prototypes, and workflow 
 #### 🎛️ Interactive Audio & Web Synthesizers
 * **[ShallotBeats](https://github.com/strothman/ShallotBeats)** — 18-kit acoustic drum step sequencer for guitar backing tracks via Web Audio API.
 * **[ShallotWHAM](https://github.com/strothman/ShallotWHAM)** — Cyber-styled dual-engine web synthesizer and performance station.
-* **[audio-harmonica](https://github.com/strothman/audio-harmonica)** — Virtual instrument polyphony and harmonica synthesis engine.
-* **ShallotWHAM-mobile** *(staged)* — Touch-optimized mobile dual-engine web synthesizer with ribbon controller and expressive performance pads.
 
 #### 🧅 The Shallot Suite (Local-First Applications)
 * **[Shallot-DECLUTTER](https://github.com/strothman/Shallot-DECLUTTER)** — Local-first AI document organizer & PWA for digitizing and structuring physical paperwork, receipts, and medical records.
@@ -48,24 +46,11 @@ This catalog indexes functional software, experimental prototypes, and workflow 
 * **[ShallotPeel](https://github.com/strothman/ShallotPeel)** — Telemetry and token usage analytics for AI coding interactions.
 
 #### ⚡ Automation & Utilities
-* **[The-Committee](https://github.com/strothman/The-Committee)** — Interactive module-chaining creative engine.
 * **[Google-Audit](https://github.com/strothman/Google-Audit)** 🔒 *(Private)* — Master Cloud Storage & Photos Migration Suite. Safe zero-download drive indexer, document isolation, duplicate/burst photo cleaner, and Google Photos migration engine with automated recovery manifests.
+* **ANGEL** *(staged)* — Angel Studios Plex library scanner, missing movie detector, and Radarr/Trakt sync engine.
 * **Book Finder** *(staged)* — Renaissance AR-aligned book discovery engine and Google Drive storage manager.
-* **Car Upgrade** *(staged)* — Vehicle infotainment firmware stepping-stone update & hardware upgrade reference.
-* **DRAIN** *(staged)* — Optimization dashboard for subscription AI workflows.
-* **util-exiftool-helper** *(staged)* — Batch media metadata processing utility.
-* **util-movie2vod-CO** *(staged)* — Media ingestion and video-on-demand processing pipeline.
-* **utilapp-Misery Detector** *(staged)* — Sentiment and mood tracking utility.
-* **utilapp-PLEX Match Maker** *(staged)* — Plex media library metadata matching assistant.
-* **utilapp-TokenPal** *(staged)* — Discord alert bot monitoring game economy market rates.
-* **utilapp-habits** *(staged)* — Local-first personal habit and routine tracker.
-* **yt-short-bot-garden** *(staged)* — Automated end-to-end YouTube Shorts video creation pipeline.
 
 #### 🎮 Game Development & Companion Tools
-* **game-DDOGS** *(staged)* — Experimental web game prototype.
-* **game-NTE** *(staged)* — Interactive canvas game prototype.
-* **game-ROBLOX Midnight Menu** *(staged)* — Luau UI and custom game scripting module.
-* **game-math-survivors-for-ipad** *(staged)* — Educational survivor-like action game for tablet.
 * **game-palworld-eggscan** *(staged)* — Companion scanner and helper for Palworld.
 
 ---

@@ -42,6 +42,7 @@ CATEGORY_MAP = {
     "Shallot-Media-Archive": ("The Shallot Suite (Local-First Applications)", "Local media indexing, tagging, and asset management."),
     
     # 4. Automation & Utilities
+    "ANGEL": ("Automation & Utilities", "Angel Studios Plex library scanner, missing movie detector, and Radarr/Trakt sync engine."),
     "Google-Audit": ("Automation & Utilities", "Master Cloud Storage & Photos Migration Suite. Safe zero-download drive indexer, document isolation, duplicate/burst photo cleaner, and Google Photos migration engine with automated recovery manifests."),
     "Book Finder": ("Automation & Utilities", "Renaissance AR-aligned book discovery engine and Google Drive storage manager."),
     "Car Upgrade": ("Automation & Utilities", "Vehicle infotainment firmware stepping-stone update & hardware upgrade reference."),
@@ -198,13 +199,23 @@ def get_repo_visibility(repo_name, public_repos, private_repos, project_path=Non
 
     return 'staged'
 
+WORKSPACE_EXCLUDES = {
+    ".git",
+    ".git_backup_root",
+    "strothman",
+    "ARCHIVE",
+    "LIFE",
+    "tmp",
+    "temp",
+}
+
 def get_existing_local_projects():
     projects = {}
     if not os.path.exists(WORKSPACE_ROOT):
         return projects
     for name in os.listdir(WORKSPACE_ROOT):
         full_path = os.path.join(WORKSPACE_ROOT, name)
-        if not os.path.isdir(full_path) or name in [".git", "strothman"]:
+        if not os.path.isdir(full_path) or name in WORKSPACE_EXCLUDES:
             continue
         
         cat, desc = CATEGORY_MAP.get(name, ("Automation & Utilities", "Custom utility project."))
@@ -215,6 +226,7 @@ def get_existing_local_projects():
             "path": full_path,
         }
     return projects
+
 
 def read_previous_project_state():
     state_file = os.path.join(PROFILE_REPO_DIR, "PROJECT_STATE.md")
@@ -453,9 +465,9 @@ def update_changelog(added_projects, removed_projects, newly_published, newly_pr
     
     entry_lines = [f"\n### Auto-Sync Update ({today})"]
     if removed_projects:
-        entry_lines.append("#### Removed (Deleted / Migrated)")
+        entry_lines.append("#### Archived / Removed (Moved to ARCHIVE)")
         for p in sorted(removed_projects):
-            entry_lines.append(f"- Removed obsolete project reference `{p}`.")
+            entry_lines.append(f"- Archived project `{p}` (moved out of daily rotation to ARCHIVE).")
     if added_projects:
         entry_lines.append("#### Added (New Workspace Projects)")
         for p in sorted(added_projects):
@@ -536,9 +548,9 @@ def main():
     if push_flag:
         print("Committing and pushing changes to GitHub...")
         subprocess.run(["git", "add", "."], cwd=PROFILE_REPO_DIR, check=True)
-        commit_msg = "chore: sync project matrix with private repositories and privacy rationale"
+        commit_msg = "chore: sync project matrix and exclude archived projects"
         if removed_projects:
-            commit_msg = f"chore: sync projects and prune ({', '.join(sorted(removed_projects))})"
+            commit_msg = f"chore: sync projects and archive ({', '.join(sorted(removed_projects))})"
         res = subprocess.run(["git", "commit", "-m", commit_msg], cwd=PROFILE_REPO_DIR, capture_output=True, text=True)
         print(res.stdout)
         push_res = subprocess.run(["git", "push", "origin", "main"], cwd=PROFILE_REPO_DIR, capture_output=True, text=True)

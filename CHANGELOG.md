@@ -8,6 +8,27 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Auto-Sync Update (2026-09-21)
+#### Archived / Removed (Moved to ARCHIVE)
+- Archived project `Car Upgrade` (moved out of daily rotation to ARCHIVE).
+- Archived project `DRAIN` (moved out of daily rotation to ARCHIVE).
+- Archived project `ShallotWHAM-mobile` (moved out of daily rotation to ARCHIVE).
+- Archived project `The-Committee` (moved out of daily rotation to ARCHIVE).
+- Archived project `audio-harmonica` (moved out of daily rotation to ARCHIVE).
+- Archived project `game-DDOGS` (moved out of daily rotation to ARCHIVE).
+- Archived project `game-NTE` (moved out of daily rotation to ARCHIVE).
+- Archived project `game-ROBLOX Midnight Menu` (moved out of daily rotation to ARCHIVE).
+- Archived project `game-math-survivors-for-ipad` (moved out of daily rotation to ARCHIVE).
+- Archived project `util-exiftool-helper` (moved out of daily rotation to ARCHIVE).
+- Archived project `util-movie2vod-CO` (moved out of daily rotation to ARCHIVE).
+- Archived project `utilapp-Misery Detector` (moved out of daily rotation to ARCHIVE).
+- Archived project `utilapp-PLEX Match Maker` (moved out of daily rotation to ARCHIVE).
+- Archived project `utilapp-TokenPal` (moved out of daily rotation to ARCHIVE).
+- Archived project `utilapp-habits` (moved out of daily rotation to ARCHIVE).
+- Archived project `yt-short-bot-garden` (moved out of daily rotation to ARCHIVE).
+#### Added (New Workspace Projects)
+- Added tracking for new project `ANGEL`.
+
 ### Auto-Sync Update (2026-09-06)
 #### Removed (Deleted / Migrated)
 - Removed obsolete project reference `util-joan-datacombinedrive`.
