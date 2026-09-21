@@ -1,2 +1,8 @@
 __pycache__/
 *.pyc
+
+# Local Archived Projects (excluded from git tracking & profile repo)
+/ARCHIVE/
+ARCHIVE/
+**/ARCHIVE/
+
