@@ -8,6 +8,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Auto-Sync Update (2026-09-22)
+#### Archived / Removed (Moved to ARCHIVE)
+- Archived project `ShallotPeel` (moved out of daily rotation to ARCHIVE).
+
 ### Auto-Sync Update (2026-09-21)
 #### Archived / Removed (Moved to ARCHIVE)
 - Archived project `Car Upgrade` (moved out of daily rotation to ARCHIVE).

@@ -43,7 +43,6 @@ This catalog indexes functional software, experimental prototypes, and workflow 
 * **[Shallot-Kitchen-Keeper](https://github.com/strothman/Shallot-Kitchen-Keeper)** — Smart grocery inventory companion to eliminate food waste.
 * **[Shallot-Media-Archive](https://github.com/strothman/Shallot-Media-Archive)** — Local media indexing, tagging, and asset management.
 * **[Shallot-Money](https://github.com/strothman/Shallot-Money)** — Sleek mobile-first budgeting and expense tracker styled with the signature Shallot Plum theme.
-* **[ShallotPeel](https://github.com/strothman/ShallotPeel)** — Telemetry and token usage analytics for AI coding interactions.
 
 #### ⚡ Automation & Utilities
 * **[Google-Audit](https://github.com/strothman/Google-Audit)** 🔒 *(Private)* — Master Cloud Storage & Photos Migration Suite. Safe zero-download drive indexer, document isolation, duplicate/burst photo cleaner, and Google Photos migration engine with automated recovery manifests.

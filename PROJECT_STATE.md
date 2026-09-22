@@ -1,6 +1,6 @@
 # 🧅 Shallot Workspace — Systems State & Ecosystem Matrix
 
-> **Last Updated**: 2026-09-21  
+> **Last Updated**: 2026-09-22  
 > **Workspace Root**: `C:\Users\strot\Antigravity IDE`  
 > **Status Summary**: Functional tracking matrix for all active tools, utilities, and applications in the Shallot ecosystem.
 
@@ -10,7 +10,7 @@
 
 | Total Applications Tracked | Published (Public) | Published (Private) | Local / Staged |
 | :---: | :---: | :---: | :---: |
-| **13** | **9** | **1** | **3** |
+| **12** | **8** | **1** | **3** |
 
 ---
 
@@ -35,7 +35,6 @@
 | **[Shallot-Kitchen-Keeper](https://github.com/strothman/Shallot-Kitchen-Keeper)** | `Shallot-Kitchen-Keeper` | 🟢 **Published** | Smart grocery inventory companion to eliminate food waste. |
 | **[Shallot-Media-Archive](https://github.com/strothman/Shallot-Media-Archive)** | `Shallot-Media-Archive` | 🟢 **Published** | Local media indexing, tagging, and asset management. |
 | **[Shallot-Money](https://github.com/strothman/Shallot-Money)** | `Shallot-Money` | 🟢 **Published** | Sleek mobile-first budgeting and expense tracker styled with the signature Shallot Plum theme. |
-| **[ShallotPeel](https://github.com/strothman/ShallotPeel)** | `ShallotPeel` | 🟢 **Published** | Telemetry and token usage analytics for AI coding interactions. |
 
 ### 4. ⚡ Automation & Utilities
 | Application | Local Directory | GitHub Remote Status | Capability & Function |
